@@ -1,4 +1,2 @@
 # open-config
-Frequently used Configuration files
-
-For Personal Use
+Just frequently used Configuration files, for personal use.
