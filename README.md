@@ -14,5 +14,5 @@ You can also run the game from this package without having D-Fend Reloaded
 installed. All you need is DOSBox (http://www.dosbox.com). You can just use
 the conf file from this folder to run the game inside DOSBox.
 
-You can find all files needed to run in the subfolders conatained in this 
+You can find all files needed to run in the subfolders contained in this 
 archive.
