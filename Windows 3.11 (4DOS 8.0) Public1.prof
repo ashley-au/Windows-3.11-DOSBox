@@ -35,11 +35,21 @@ NrOfMounts=2
 0=.\VirtualHD\C_DRIVE\;Drive;C;False;;
 Environment=PATH[61]Z:\[13][10]
 SetupMD5=
+<<<<<<< HEAD
+LastModification=43555-48147
+=======
 LastModification=43552-57240
+>>>>>>> parent of 6afba16... First public release
 ScreenshotListScreenshot=
 Tab2=24
 1=ASK;CDROM;D;false;;
+<<<<<<< HEAD
+Environment=PATH[61]Z:\[13][10]
+Tab2=0
+Tab=1
+=======
 Tab=6
+>>>>>>> parent of 6afba16... First public release
 Loadhigh=0
 CloseOnExit=1
 AutoMountCDs=0
