@@ -1,55 +1,15 @@
-[ExtraInfo]
-Name=Windows 3.11 (4DOS 8.0) Public
-Icon=WIN31.ICO
-Genre=Operating Environment
-Developer=Microsoft
-Publisher=Microsoft
-Year=1993
-Language=English
-UserInfo=License=Commercial[13][10]
-WWW=https://en.wikipedia.org/wiki/Windows_3.1x
-WWWName=en.wikipedia.org/wiki/Windows_3.1x
-Favorite=0
-Notes=
-WWW2Name=
-WWW2=
-WWW3Name=
-WWW3=
-WWW4Name=
-WWW4=
-WWW5Name=
-WWW5=
-WWW6Name=
-WWW6=
-WWW7Name=
-WWW7=
-WWW8Name=
-WWW8=
-WWW9Name=
-WWW9=
-
 [Extra]
+NrOfMounts=2
 Exe=.\VirtualHD\C_DRIVE\FREEDOS\4DOS.COM
 ExeMD5=8372DFAA7C976EA0B95F865125CB25B9
-NrOfMounts=2
-0=.\VirtualHD\C_DRIVE\;Drive;C;False;;
-Environment=PATH[61]Z:\[13][10]
 SetupMD5=
-<<<<<<< HEAD
 LastModification=43555-48147
-=======
-LastModification=43552-57240
->>>>>>> parent of 6afba16... First public release
 ScreenshotListScreenshot=
-Tab2=24
+0=.\VirtualHD\C_DRIVE\;Drive;C;False;;
 1=ASK;CDROM;D;false;;
-<<<<<<< HEAD
 Environment=PATH[61]Z:\[13][10]
 Tab2=0
 Tab=1
-=======
-Tab=6
->>>>>>> parent of 6afba16... First public release
 Loadhigh=0
 CloseOnExit=1
 AutoMountCDs=0
@@ -178,51 +138,39 @@ Finalization=
 CustomSettings=
 ProfileMode=DOSBox
 
-[dosbox]
-captures=.\Capture\Windows 3.11 (4DOS 8.0) Public\
-DOSBoxDirectory=Default
-machine=svga_et4000
-memsize=16
-
-[cpu]
-type=386
-cyclesup=10
-cyclesdown=20
-core=auto
-cycles=auto
-
-[gus]
-gus=1
-gusrate=44100
-irq1=5
-dma1=1
-gusbase=240
-ultradir=C:\ULTRASND
-
-[serial]
-serial1=Dummy
-serial2=Dummy
-serial3=Disabled
-serial4=Disabled
-
-[dos]
-ReportedDOSVersion=6.22
-Force2ButtonMouseMode=0
-SwapMouseButtons=0
-xms=1
-ems=1
-umb=1
-4DOS=0
-DOS32A=0
-keyboardlayout=default
-codepage=default
-NumLockStatus=
-CapsLockStatus=
-ScrollLockStatus=
-
 [Extras]
 IgnoreWindowsFileWarnings=0
 NoDOSBoxFailedDialog=0
+
+[ExtraInfo]
+Favorite=1
+Icon=WIN31.ICO
+Genre=Operating Environment
+Developer=Microsoft
+Publisher=Microsoft
+Year=1993
+Notes=ET4000 SVGA[13][10]1024 * 768 256 colour[13][10]SoundBlaster 16[13][10]386 class CPU[13][10]
+Language=English
+UserInfo=License=Commercial[13][10]Version=8.0[13][10]
+WWWName=www.4dos.tk/
+WWW=https://en.wikipedia.org/wiki/Windows_3.1x
+Name=Windows 3.11 (4DOS 8.0) Public
+WWW2Name=
+WWW2=
+WWW3Name=
+WWW3=
+WWW4Name=
+WWW4=
+WWW5Name=
+WWW5=
+WWW6Name=
+WWW6=
+WWW7Name=
+WWW7=
+WWW8Name=
+WWW8=
+WWW9Name=
+WWW9=
 
 [sdl]
 usecancodes=1
@@ -239,14 +187,29 @@ priority=higher,normal
 mapperfile=default
 DOSBoxlanguage=default
 
+[dos]
+ReportedDOSVersion=6.22
+Force2ButtonMouseMode=0
+SwapMouseButtons=0
+xms=1
+ems=1
+umb=1
+4DOS=0
+DOS32A=0
+keyboardlayout=default
+codepage=default
+NumLockStatus=
+CapsLockStatus=
+ScrollLockStatus=
+
 [render]
-TextModeLines=25
 aspect=1
+TextModeLines=25
 frameskip=0
 scaler=normal2x
 
 [ipx]
-ipx=0
+ipx=1
 type=none
 address=
 port=213
@@ -260,9 +223,9 @@ height=110
 printoutput=ps
 
 [mixer]
+blocksize=2048
 nosound=0
 rate=44100
-blocksize=1024
 prebuffer=10
 VolumeMasterLeft=100
 VolumeMasterRight=100
@@ -289,6 +252,14 @@ sbtype=sb16
 sbbase=220
 oplmode=auto
 oplemu=default
+
+[gus]
+gus=1
+gusrate=22050
+irq1=5
+dma1=1
+gusbase=240
+ultradir=C:\ULTRASND
 
 [speaker]
 pcspeaker=1
@@ -361,20 +332,39 @@ AfterExecution.Parallel=0
 BeforeExecution=
 AfterExecution=
 
+[dosbox]
+captures=.\Capture\Windows 3.11 (4DOS 8.0) Public\
+DOSBoxDirectory=Default
+machine=svga_et4000
+memsize=16
+
+[cpu]
+cyclesdown=100
+type=386
+cyclesup=10
+core=auto
+cycles=auto
+
 [vga]
 videoram=2048
 svgachipset=3s
-PixelShader=none
+PixelShader=
+
+[serial]
+serial1=Dummy
+serial2=Dummy
+serial3=Disabled
+serial4=Disabled
 
 [glide]
-glide=false
+glide=0
 port=600
 LFB=full
 
 [midi]
+device=win32
 config=CASIO USB-MIDI
 mpu401=intelligent
-device=default
 MT32Mode=auto
 MT32Time=5
 MT32Level=3
